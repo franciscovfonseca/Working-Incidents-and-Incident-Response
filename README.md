@@ -4,13 +4,27 @@
 
 <br>
 
+<br>
+
+In this lab we're going to **Investigate & Work the Incidents** being generated within **Microsoft Sentinel**.
+
+We'll do this in accordance with the [**NIST 800-61**](https://nvlpubs.nist.gov/nistpubs/specialpublications/nist.sp.800-61r2.pdf) **Incident Management Lifecycle**.
+
+<br>
+
+<p align="center">
+<img width="750" src="https://github.com/user-attachments/assets/66745d60-fc59-406b-9955-b371304e4d98" alt="Banner"/>
+
+
+<br>
+
   <details close> 
   
-**<summary> 📝 Context</summary>**
+**<summary> 📌 Overview</summary>**
 
 We'll now start practicing **Incident Response**.
 
-We have accumulated a decent number of Incidents over the last 24 Hours:
+We have accumulated a decent number of **Incidents** over the last 24 Hours:
 
 <br>
 
@@ -18,18 +32,23 @@ We have accumulated a decent number of Incidents over the last 24 Hours:
 
 <br>
 
-So we’re going to take our time and work our way through some of these ➜ as if we’re working as a **SOC Analyst**.
+So we’re going to take our time and work our way through some of these ➜ as if we’re working in a **SOC Environment**.
 
-Basically in this lab we’re going to practice the **NIST 800-61 Incident Management Lifecycle**.
+As previously mentioned ➜ we're going to practice the **NIST 800-61 Incident Management Lifecycle**.
 
-In reality ➜ every Organization practices Incident Response a little differently than one another.
+💡 In reality ➜ every Organization practices **Incident Response** a little differently than one another.
 
-We won’t be using here the “absolute best way” to do Incident Response** ➜ but we’ll be adhering to the NIST 800-61 Lifecycle of:
+<br>
 
--	**Preparation**
--	**Datection & Analysis**
--	**Containment, Eradication & Recovery**
--	**Post-Incident Activity**
+We won’t be using here the “absolute best way” to do **Incident Response** ➜ but we’ll be adhering to the **NIST 800-61 Lifecycle** of:
+
+**1️⃣ Preparation**
+
+**2️⃣ Detection & Analysis**
+
+**3️⃣	Containment, Eradication & Recovery**
+
+**4️⃣	Post-Incident Activity**
 
 <br>
 
@@ -39,22 +58,10 @@ We won’t be using here the “absolute best way” to do Incident Response** �
 
 <br>
 
-
-In this lab we're going to **Investigate & Work the Incidents** being generated within **Microsoft Sentinel**.
-
-We'll do this in accordance with the [**NIST 800-61**](https://nvlpubs.nist.gov/nistpubs/specialpublications/nist.sp.800-61r2.pdf) **Incident Management Lifecycle**.
-
-<br>
-
-<p align="center">
-<img width="700" src="https://github.com/user-attachments/assets/66745d60-fc59-406b-9955-b371304e4d98" alt="Banner"/>
-
-<br>
-
 <br>
 
 <details close> 
-<summary> <h2>Guidelines for Incident Response</h2> </summary>
+<summary> <h2>Incident Response Guidelines</h2> </summary>
 
 <br>
 
@@ -92,7 +99,7 @@ We've completed this step already by:
 
 <br>
 
-|                   |                                  |
+|                   | **Action**                                 |
 | ------------------------------ | ------------------------------------------ |
 | 1              | Set the **Severity**, the **Status** & the **Owner** of the Incident. |
 | 2                | **View Full Details**.                |
@@ -141,9 +148,9 @@ We'll use this simple [**Incident Response PlayBook**](https://docs.google.com/d
 
 ### Step 4️⃣ ➜ Post-Incident Activity
 
-- Document Findings
+- Document Findings.
 
-- Close out the Incident in Sentinel
+- Close out the Incident in Sentinel.
 
 <br>
 
@@ -195,7 +202,8 @@ We'll use this simple [**Incident Response PlayBook**](https://docs.google.com/d
 
 - Assess the Potential Impact of the Incident.
 
-  - What Type of Account was it? What Permissions did it have?
+  - What Type of Account was it?
+  - What Permissions did it have?
 
 <br>
 
@@ -252,6 +260,10 @@ We'll use this simple [**Incident Response PlayBook**](https://docs.google.com/d
 
 <br>
 
+![azure portal](https://github.com/user-attachments/assets/f3c2a5d6-044c-469d-b70a-c066fe2a29e3)
+
+<br>
+
 <h2></h2>
 
 <br>
@@ -284,6 +296,8 @@ The Entity is involved with other **Brute Force Attempts** during the same perio
 
 <br>
 
+![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+
 <br>
 
 <h2></h2>
@@ -291,6 +305,10 @@ The Entity is involved with other **Brute Force Attempts** during the same perio
 <br>
 
 **7️⃣** **Determine Legitimacy** of the Incident
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
 
 <br>
 
@@ -306,9 +324,9 @@ Determined to be ➜ a **Legitimate Incident** ✅
 
 <br>
 
-Determined to be ➜ a **True Positive** ✅
+Determined to be ➜ a **False Positive** ❌
 
-From the **Investigation** ➜ you can see that the **Attacker / Entity** ```63.143.47.155``` is also involved in **4 other Brute Force Attempt Instances**.
+⚠️ From the **Investigation** ➜ you can see that the **Attacker / Entity** ```186.96.10.36``` is also involved in **4 other Brute Force Attempt Instances**.
 
 <br>
 
