@@ -24,7 +24,7 @@ We'll do this in accordance with the [**NIST 800-61**](https://nvlpubs.nist.gov/
 
 We'll now start practicing **Incident Response**.
 
-We have accumulated a decent number of **Incidents** over the last 24 Hours:
+We can see that we have accumulated a decent number of **Incidents** over the last 24 Hours:
 
 <br>
 
@@ -60,8 +60,7 @@ We won’t be using here the “absolute best way” to do **Incident Response**
 
 <br>
 
-<details close> 
-<summary> <h2>Incident Response Guidelines</h2> </summary>
+<h2>📝 Incident Response Guidelines</h2>
 
 <br>
 
@@ -89,7 +88,7 @@ We've completed this step already by:
 
 >   <details close> 
 >   
-> **<summary> 📝 Explanation</summary>**
+> **<summary> 💡 Context</summary>**
 > 
 > This phase gets kicked off when someone notices some kind of **Anomaly in the System**.
 > 
@@ -124,7 +123,7 @@ We'll use this simple [**Incident Response PlayBook**](https://docs.google.com/d
 
 >   <details close> 
 >   
-> **<summary> 💡</summary>**
+> **<summary> 💬</summary>**
 > 
 > We can think of a **Playbook** as an **SOP (Standard Operating Procedure)** for when a certain Incident happens.
 > 
@@ -153,8 +152,6 @@ We'll use this simple [**Incident Response PlayBook**](https://docs.google.com/d
 - Close out the Incident in Sentinel.
 
 <br>
-
-  </details>
 
 <h2></h2>
 
