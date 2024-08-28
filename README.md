@@ -435,12 +435,6 @@ We're also going to delete the existent **RDP Rule** ➜ that **Allows anyone to
 
 <br>
 
-
-
-
-
-<br>
-
   </details>
 
 <h2></h2>
@@ -453,9 +447,9 @@ We're also going to delete the existent **RDP Rule** ➜ that **Allows anyone to
 >   
 > **<summary> 💡 </summary>**
 > 
-> This Incident gets triggered when Sentinel detects Unusual or Unauthorized Access to Critical Credentials in Azure Key Vault.
+> This Incident gets triggered when Sentinel detects **Unusual or Unauthorized Access to Critical Credentials in Azure Key Vault**.
 > 
-> For example ➜ when someones unauthorized reads an important Password from our Entreprise Password Manager ➜ Azure Key Vault.
+> For example ➜ when someone unauthorized **Reads an Important Password** from our Entreprise Password Manager (AKA **Azure Key Vault**).
 > 
 >   </details>
 
@@ -466,6 +460,10 @@ We're also going to delete the existent **RDP Rule** ➜ that **Allows anyone to
 <br>
 
 ➡️ This Incident involves the unexpected reading of a critical **Secret** from the organization's **Key Vault**.
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/6dc6cf54-b40b-47f0-854b-8fbd32c7712b)
 
 <br>
 
@@ -552,7 +550,7 @@ We're also going to delete the existent **RDP Rule** ➜ that **Allows anyone to
 
 <br>
 
-**6️⃣** **Inspect the Entities** and see if there are any Related Events
+**6️⃣** **Inspect the Entities** and see if there are any **Related Events**
 
 <br>
 
@@ -596,9 +594,9 @@ Determined to be ➜ a **False Positive** ❌
 
 ➡️ None.
 
-This was me viewing Key Vault Secrets at work ➜ I'm authorized to do this.
+This was me **Viewing Key Vault Secrets** ➜ I'm authorized to do this.
 
-I don't think there is anything wrong with the Rule Logic here ➜ just happened to be a legitimate and authorized Incident-Generating Event.
+I don't think there is anything wrong with the **Rule Logic** here ➜ just happened to be a **Legitimate & Authorized Incident-Generating Event**.
 
 <br>
 
@@ -608,13 +606,39 @@ I don't think there is anything wrong with the Rule Logic here ➜ just happened
 
 <br>
 
-✅ Document Findings and Close out the Incident in Sentinel.
+**Document Findings** & **Close out the Incident** in Microsoft Sentinel:
+
+✅ Closing out Incident as **False-Positive** ❌
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/b0f91414-fa5e-4414-b9da-57c238fccbb4)
+<details close> 
+  
+**<summary> Close The Incident</summary>**
 
 <br>
+
+We'll go back to **Microsoft Sentinel** to change the **Status** of the Incident to ☑️ **Closed**:
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+
+<br>
+
+In the **"Comment"** section we'll paste the **Incident Notes** we took throughout this **Incident Response Lifecycle**:
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+
+<br>
+
+  </details>
 
 <br>
 
