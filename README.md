@@ -337,19 +337,9 @@ Determined to be ➜ a **False Positive** ❌
 
 <br>
 
-<details close> 
-  
-**<summary> 💡 Note</summary>**
+We will address this later ➜ in the **Environment Hardening Section**.
 
-<br>
-
-I will address this later ➜ in the **Environment Hardening Section**.
-
-Despite that ➜ I'm including the steps here for reference from the **Incident Response Playbook**.
-
-<br>
-
-  </details>
+Despite that ➜ I'm including the steps here for reference from the **Incident Response Playbook**:
 
 <br>
 
@@ -367,7 +357,87 @@ Despite that ➜ I'm including the steps here for reference from the **Incident 
 
 <br>
 
-✅ Document Findings and Close out the Incident in Sentinel.
+**Document Findings** & **Close out the Incident** in Microsoft Sentinel:
+
+✅ Closing out Incident as **False-Positive** ➜ but we'll start the processes for Hardening the NSGs.
+
+<br>
+
+<details close> 
+  
+**<summary> Close The Incident</summary>**
+
+<br>
+
+We'll go back to **Microsoft Sentinel** to change the **Status** of the Incident to ☑️ **Closed**:
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+
+<br>
+
+In the **"Comment"** section we'll paste the **Incident Notes** we took throughout this whole **Incident Response Process**:
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+
+<br>
+
+  </details>
+
+<br>
+
+<details close> 
+  
+**<summary> Lockdown the NSG</summary>**
+
+<br>
+
+Back in the Azure Portal ➜ we'll go to our ```windows-vm``` ➜ amd click on the **Networking** blade:
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+
+<br>
+
+Then inside of the Windows VM's **NSG** ➜ we'll Edit the existent **Inbound Security Rule**:
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+
+<br>
+
+We'll Edit it so that we only **Allow Inbound Traffic** from our own **IP Address**:
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+
+<br>
+
+We're also going to delete the existent **RDP Rule** ➜ that **Allows anyone to RDP into our VM** ➜ which we don't want:
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+
+<br>
+
+  </details>
+
+<br>
+
+
+
+
 
 <br>
 
