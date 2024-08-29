@@ -399,7 +399,7 @@ In the **"Comment"** section we'll paste the **Incident Notes** we took througho
 
 <br>
 
-Back in the Azure Portal ➜ we'll go to our ```windows-vm``` ➜ amd click on the **Networking** blade:
+Back in the **Azure Portal** ➜ we'll go to our ```windows-vm``` ➜ and click on the **Networking** blade:
 
 <br>
 
@@ -647,143 +647,6 @@ In the **"Comment"** section we'll paste the **Incident Notes** we took througho
 <h2></h2>
 
 <details close> 
-<summary> <h2>Incident ❸ - Brute Force SUCCESS - Microsoft Entra ID</h2> </summary>
-<br>
-
-> <details close> 
->   
-> **<summary> 💡 </summary>**
-> 
-> The Incident gets triggered when Sentinel detects a Successful Login to a Microsoft Entra ID Account following numerous Failed Login Attempts.
-> 
-> For example ➜ an Attacker Successfully Accessed a Microsoft Entra ID Account by repeatedly Guessing Passwords.
-> 
->   </details>
-
-<br>
-
-## Incident Description
-
-<br>
-
-➡️ This Incident involves Observation of potential **Brute Force Success against Microsoft Entra ID**.
-
-<br>
-
-<br>
-
-## Initial Response Actions
-
-<br>
-
-- Verify the Authenticity of the Alert or Report.
-
-- Immediately Identify and Revoke Sessions/Access for Affected User.
-
-- Identify the Origin of the Attacker & Determine if they are Attacking or Involved with anything else.
-
-- Assess the Potential Impact of the Incident.
-
-  - What Type of Account was it?
-
-  - What Roles did it have?
-
-  - How long has it been since the Breach went Unattended?
-
-<br>
-
-<br>
-
-## Detection & Analysis
-
-<details close> 
-<summary> <h3>🎯 Step-by-Step</h3> </summary>
-
-<br>
-  
-**4️⃣** Observe the **Entities** & **Incident Timeline**
-
-<br>
-
-![azure portal](https://github.com/user-attachments/assets/4316f744-c792-4cba-a7c0-e9e44b00aa3e)
-
-<br>
-
-<h2></h2>
-
-<br>
-
-**5️⃣** **Investigate the Incident** and continue trying to **Determine the Scope**
-
-<br>
-
-![azure portal](https://github.com/user-attachments/assets/c2aa1fce-32ac-4003-a659-a82ee50f319d)
-
-<br>
-
-  </details>
-
-<br>
-
-<br>
-
-## Containment, Eradication & Recovery
-
-<br>
-
-➡️ **Reset** the affected **User’s Password & Roles** if applicable.
-
-➡️ **Enable MFA**.
-
-➡️ Consider preventing any logins from outside the US with **Conditional Access***.
-
-<br>
-
-<br>
-
-## Post-Incident Activity
-
-<br>
-
-✅ Document Findings and Close out the Incident in Sentinel.
-
-<br>
-
-<details close> 
-  
-**<summary> 📝 Documentation</summary>**
-
-<br>
-
-This is another **False Positive** ❌
-
-It could have been Multiple Login Attempts with the Incorrect Password or MFA Code.
-
-I recognize this IP from work ➜ although I'm not entirely sure how 35 events were produced.
-
-Perhaps by restoring multiple browser tabs simultaneously?
-  
-  - MFA is already Enabled on the User's Account.
- 
-  - and the Logins occurred from an Expected IP.
-
-<br>
-
-  </details>
-
-<br>
-
-![azure portal](https://github.com/user-attachments/assets/7453979b-1468-41fe-ab5e-54b7626b59aa)
-
-<br>
-
-<br>
-
-  </details>
-
-<h2></h2>
-
-<details close> 
 <summary> <h2>Incident ❹ - Brute Force ATTEMPT - Linux Syslog</h2> </summary>
 <br>
 
@@ -791,7 +654,9 @@ Perhaps by restoring multiple browser tabs simultaneously?
 >   
 > **<summary> 💡 </summary>**
 > 
-> This Incident gets triggered when Sentinel detects a series of Consecutive Failed Login Attempts on a Linux Machine, recorded in the Syslog.
+> This Incident in Microsoft Sentinel is Triggered when a **Brute Force Attack Successfully Gains Access to a Linux System**.
+> 
+> This means an **Unauthorized User has Guessed the Correct Password** after Multiple Attempts, as recorded in the **Linux Syslog**.
 > 
 >   </details>
 
@@ -802,6 +667,10 @@ Perhaps by restoring multiple browser tabs simultaneously?
 <br>
 
 ➡️ This Incident involves Observation of potential **Brute Force Attempts against a Linux Virtual Machine**.
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/7453979b-1468-41fe-ab5e-54b7626b59aa)
 
 <br>
 
@@ -848,6 +717,46 @@ Perhaps by restoring multiple browser tabs simultaneously?
 
 <br>
 
+**2️⃣** **View Full Details**
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/780dbef7-c579-4fd1-ae9d-7006e0d2ab53)
+
+<br>
+
+<h2></h2>
+
+<br>
+
+**3️⃣** Observe the **Activity Log**
+
+<br>
+
+**```Nothing to show here.```**
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/a5cba627-578f-4911-8a6f-400a9f48ad42)
+
+<br>
+
+<h2></h2>
+
+<br>
+
+**4️⃣** Observe the **Entities** & **Incident Timeline**
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/a5cba627-578f-4911-8a6f-400a9f48ad42)
+
+<br>
+
+<h2></h2>
+
+<br>
+
 **5️⃣** **Investigate the Incident** and continue trying to **Determine the Scope**
 
 <br>
@@ -876,21 +785,34 @@ Perhaps by restoring multiple browser tabs simultaneously?
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/47a651e6-3887-42b7-bfc8-fba3ef30d281)
+<h2></h2>
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/3aed1986-18eb-4bfd-93d9-f358b77592a9)
+**7️⃣** **Determine Legitimacy** of the Incident
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/10fe187d-3898-4edf-b276-bdc4b89fe7e4)
+Determined to be ➜ a **Legitimate Incident** ✅
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/fadc1a2e-eb84-4f70-a48b-24dbe452c3f0)
+![azure portal](https://github.com/user-attachments/assets/478d9be9-7822-4b30-a9c5-cdfafcf5cb70)
 
 <br>
+
+<h2></h2>
+
+<br>
+
+**8️⃣** If **True Positive** ➜ Continue | If **False Positive** ➜ Close it out
+
+<br>
+
+Determined to be ➜ a **True Positive** ✅
+
+<br>
+
 
   </details>
 
@@ -902,12 +824,67 @@ Perhaps by restoring multiple browser tabs simultaneously?
 
 <br>
 
-➡️ **Lock down the NSG** assigned to that VM / Subnet ➜ either **Entirely** or to **Only Allow Necessary Traffic**.
+<details close> 
+  
+**<summary> ➡️ Lock down the NSG assigned to that VM / Subnet</summary>**
 
-➡️ **Reset** the affected **User’s Password & Roles** if applicable.
+<br>
 
-➡️ **Enable MFA**.
+Inside the **Azure Portal** ➜ we'll go to our ```linux-vm``` ➜ and click on the **Networking** blade:
 
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+
+<br>
+
+Then inside of the Linux VM's **NSG** ➜ we'll Delete the First 2 Existent **Custom Security Rules**:
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+
+<br>
+
+We'll then **Add a New Inbound Security Rule** ➜ so that we only **Allow Inbound Traffic** from our own **IP Address**:
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+
+<br>
+
+  </details>
+
+<br>
+
+<details close> 
+  
+**<summary> ➡️ Reset the Affected User’s Password</summary>**
+
+<br>
+
+We'll go to our Virtual Machine ```linux-vm``` ➜ and click on the **Reset password** blade:
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+
+<br>
+
+Then we'll just **Reset the Password** of ```labuser``` to a Strong Password ➜ and click on 💾 **Update**
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+
+<br>
+
+  </details>
+
+<br>
+
+➡️ **Enable MFA** ➜ *We'll do this in Subsequent Labs*.
 
 <br>
 
@@ -917,37 +894,333 @@ Perhaps by restoring multiple browser tabs simultaneously?
 
 <br>
 
-✅ Document Findings and Close out the Incident in Sentinel.
+**Document Findings** & **Close out the Incident** in Microsoft Sentinel:
+
+✅ Closing out Incident as **True Positive**
 
 <br>
 
 <details close> 
   
-**<summary> 📝 Documentation</summary>**
+**<summary> Close The Incident</summary>**
 
 <br>
 
-There are **6 Entities** (218.92.0.118, 151.80.184.123, 123.49.33.102, 43.134.54.244, 43.156.227.146, 165.22.62.136) ➜ Attacking this Linux Virtual Machine ➜ with No Successful Attempts.
+We'll go back to **Microsoft Sentinel** to change the **Status** of the Incident to ☑️ **Closed**:
 
-There is a total of **30 Events** grouped into **5 Alerts**.
+<br>
 
-⚠️ Suspected Over-Exposure to the Public Internet.
+![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+
+<br>
+
+In the **"Comment"** section we'll paste the **Incident Notes** we took:
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
 
 <br>
 
   </details>
-
-<br>
-
-![azure portal](https://github.com/user-attachments/assets/240f7483-122a-4ce0-883f-bd09c5ef7af4)
-
-<br>
 
 <br>
 
   </details>
 
 <h2></h2>
+
+<details close> 
+<summary> <h2>Incident ❹ - Brute Force ATTEMPT - Linux Syslog</h2> </summary>
+<br>
+
+> <details close> 
+>   
+> **<summary> 💡 </summary>**
+> 
+> This Incident in Microsoft Sentinel is Triggered when a **Brute Force Attack Successfully Gains Access to a Linux System**.
+> 
+> This means an **Unauthorized User has Guessed the Correct Password** after Multiple Attempts, as recorded in the **Linux Syslog**.
+> 
+>   </details>
+
+<br>
+
+## Incident Description
+
+<br>
+
+➡️ This Incident involves Observation of potential **Brute Force Attempts against a Linux Virtual Machine**.
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/7453979b-1468-41fe-ab5e-54b7626b59aa)
+
+<br>
+
+<br>
+
+## Initial Response Actions
+
+<br>
+
+- Verify the Authenticity of the Alert or Report.
+
+- Immediately Isolate the Machine & Change the Password of the Affected User.
+
+- Identify the Origin of the Attacks & Determine if they are Attacking or Involved with anything else.
+
+- Determine How and When the Attack occurred.
+
+  - Are the NSGs not being Locked Down? If so ➜ Check other NSGs.
+
+- Assess the Potential Impact of the Incident.
+
+  - What Type of Account was it? Permissions?
+
+<br>
+
+<br>
+
+## Detection & Analysis
+
+<details close> 
+<summary> <h3>🎯 Step-by-Step</h3> </summary>
+
+<br>
+  
+**1️⃣** Set the **Severity**, the **Status** & the **Owner** of the Incident:
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/a78aa8c6-5ab7-4229-8d69-61f8c479dc28)
+
+<br>
+
+<h2></h2>
+
+<br>
+
+**2️⃣** **View Full Details**
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/780dbef7-c579-4fd1-ae9d-7006e0d2ab53)
+
+<br>
+
+<h2></h2>
+
+<br>
+
+**3️⃣** Observe the **Activity Log**
+
+<br>
+
+**```Nothing to show here.```**
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/a5cba627-578f-4911-8a6f-400a9f48ad42)
+
+<br>
+
+<h2></h2>
+
+<br>
+
+**4️⃣** Observe the **Entities** & **Incident Timeline**
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/a5cba627-578f-4911-8a6f-400a9f48ad42)
+
+<br>
+
+<h2></h2>
+
+<br>
+
+**5️⃣** **Investigate the Incident** and continue trying to **Determine the Scope**
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/a79b05a8-8c0a-4fec-b690-b96051203826)
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/aeeb946b-3404-4f60-9a4d-1106374f07bc)
+
+<br>
+
+<h2></h2>
+
+<br>
+
+**6️⃣** **Inspect the Entities** and see if there are any **Related Events**.
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/c3cbf772-7e0b-4ad2-967e-9c2b70924f57)
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/478d9be9-7822-4b30-a9c5-cdfafcf5cb70)
+
+<br>
+
+<h2></h2>
+
+<br>
+
+**7️⃣** **Determine Legitimacy** of the Incident
+
+<br>
+
+Determined to be ➜ a **Legitimate Incident** ✅
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/478d9be9-7822-4b30-a9c5-cdfafcf5cb70)
+
+<br>
+
+<h2></h2>
+
+<br>
+
+**8️⃣** If **True Positive** ➜ Continue | If **False Positive** ➜ Close it out
+
+<br>
+
+Determined to be ➜ a **True Positive** ✅
+
+<br>
+
+
+  </details>
+
+<br>
+
+<br>
+
+## Containment, Eradication & Recovery
+
+<br>
+
+<details close> 
+  
+**<summary> ➡️ Lock down the NSG assigned to that VM / Subnet</summary>**
+
+<br>
+
+Inside the **Azure Portal** ➜ we'll go to our ```linux-vm``` ➜ and click on the **Networking** blade:
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+
+<br>
+
+Then inside of the Linux VM's **NSG** ➜ we'll Delete the First 2 Existent **Custom Security Rules**:
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+
+<br>
+
+We'll then **Add a New Inbound Security Rule** ➜ so that we only **Allow Inbound Traffic** from our own **IP Address**:
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+
+<br>
+
+  </details>
+
+<br>
+
+<details close> 
+  
+**<summary> ➡️ Reset the Affected User’s Password</summary>**
+
+<br>
+
+We'll go to our Virtual Machine ```linux-vm``` ➜ and click on the **Reset password** blade:
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+
+<br>
+
+Then we'll just **Reset the Password** of ```labuser``` to a Strong Password ➜ and click on 💾 **Update**
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+
+<br>
+
+  </details>
+
+<br>
+
+➡️ **Enable MFA** ➜ *We'll do this in Subsequent Labs*.
+
+<br>
+
+<br>
+
+## Post-Incident Activity
+
+<br>
+
+**Document Findings** & **Close out the Incident** in Microsoft Sentinel:
+
+✅ Closing out Incident as **True Positive**
+
+<br>
+
+<details close> 
+  
+**<summary> Close The Incident</summary>**
+
+<br>
+
+We'll go back to **Microsoft Sentinel** to change the **Status** of the Incident to ☑️ **Closed**:
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+
+<br>
+
+In the **"Comment"** section we'll paste the **Incident Notes** we took:
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+
+<br>
+
+  </details>
+
+<br>
+
+<h2></h2>
+
+  </details>
 
 <br>
 
