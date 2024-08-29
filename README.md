@@ -647,7 +647,7 @@ In the **"Comment"** section we'll paste the **Incident Notes** we took througho
 <h2></h2>
 
 <details close> 
-<summary> <h2>Incident ❹ - Brute Force ATTEMPT - Linux Syslog</h2> </summary>
+<summary> <h2>Incident ❸ - Brute Force ATTEMPT - Linux Syslog</h2> </summary>
 <br>
 
 > <details close> 
@@ -935,16 +935,16 @@ In the **"Comment"** section we'll paste the **Incident Notes** we took:
 <h2></h2>
 
 <details close> 
-<summary> <h2>Incident ❹ - Brute Force ATTEMPT - Linux Syslog</h2> </summary>
+<summary> <h2>Incident ❹ - Malware Detected</h2> </summary>
 <br>
 
 > <details close> 
 >   
 > **<summary> 💡 </summary>**
 > 
-> This Incident in Microsoft Sentinel is Triggered when a **Brute Force Attack Successfully Gains Access to a Linux System**.
+> A **Malware Detected Incident** indicates that a **Malicious Software** was identified on a System or Network.
 > 
-> This means an **Unauthorized User has Guessed the Correct Password** after Multiple Attempts, as recorded in the **Linux Syslog**.
+> This Incident get Triggered when Sentinel detects **Suspicious Files or Activities** matching known **Malware Patterns**.
 > 
 >   </details>
 
@@ -954,7 +954,9 @@ In the **"Comment"** section we'll paste the **Incident Notes** we took:
 
 <br>
 
-➡️ This Incident involves Observation of potential **Brute Force Attempts against a Linux Virtual Machine**.
+➡️ This Incident involves **Malware being Detected** on a Workstation:
+  
+  - Potentially compromising the **Confidentiality**, **Integrity**, or **Availability** of the System and Data.
 
 <br>
 
@@ -968,19 +970,18 @@ In the **"Comment"** section we'll paste the **Incident Notes** we took:
 
 <br>
 
-- Verify the Authenticity of the Alert or Report.
+- Verify the Authenticity of the alert or report.
 
-- Immediately Isolate the Machine & Change the Password of the Affected User.
+- Identify the Primary User Account of the System (if applicable).
 
-- Identify the Origin of the Attacks & Determine if they are Attacking or Involved with anything else.
+- Notify any Affected Stakeholders ➜ such as Users or Customers (as appropriate) and provide them with guidance on:
+  - How to Protect Themselves from Potential Harm.
 
-- Determine How and When the Attack occurred.
+- Run a Full System Scan ➜ using an up-to-date Antivirus Software to Identify and Remove the Malware.
 
-  - Are the NSGs not being Locked Down? If so ➜ Check other NSGs.
+- If the Malware cannot be Removed or is suspected to have caused Significant Damage:
+  - Shut Down the Workstation and Disconnect it from the Network.
 
-- Assess the Potential Impact of the Incident.
-
-  - What Type of Account was it? Permissions?
 
 <br>
 
@@ -1018,10 +1019,6 @@ In the **"Comment"** section we'll paste the **Incident Notes** we took:
 <br>
 
 **3️⃣** Observe the **Activity Log**
-
-<br>
-
-**```Nothing to show here.```**
 
 <br>
 
@@ -1085,7 +1082,23 @@ Determined to be ➜ a **Legitimate Incident** ✅
 
 <br>
 
+💡 Here is the **UPDATED Query** we used for **Detecting Malware**:
+
+```commandline
+// Malware Detection
+Event
+| where EventLog == "Microsoft-Windows-Windows Defender/Operational"
+| where EventID == "1116" or EventID == "1117"
+```
+<br>
+
 ![azure portal](https://github.com/user-attachments/assets/478d9be9-7822-4b30-a9c5-cdfafcf5cb70)
+
+<br>
+
+All of these Alerts have **No Action necessary** ➜ it looks like they were Remediated:
+
+```Microsoft Antimalware has taken action to protect this machine from malware or other pottentially unwanted Software```
 
 <br>
 
@@ -1097,10 +1110,30 @@ Determined to be ➜ a **Legitimate Incident** ✅
 
 <br>
 
-Determined to be ➜ a **True Positive** ✅
+✅ Determined to be ➜ a **False Positive** ❌
 
 <br>
 
+As far as **Malware** goes ➜ this Alert was a **False Positive** because it looks like the User was testing with **EICAR Files**.
+
+💡 This is the **Query** we used to Identify what **Type of Malware was Detected**:
+
+```commandline
+SecurityAlert
+| where AlertType == "AntimalwareActionTaken"
+| where CompromisedEntity == "windows-vm"
+| where RemediationSteps !has "No user action is necessary"
+| where ExtendedProperties !has "EICAR"
+```
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/478d9be9-7822-4b30-a9c5-cdfafcf5cb70)
+
+<br>
+
+📝 Corroborated with User and User's Manager.
+
+<br>
 
   </details>
 
@@ -1112,67 +1145,9 @@ Determined to be ➜ a **True Positive** ✅
 
 <br>
 
-<details close> 
-  
-**<summary> ➡️ Lock down the NSG assigned to that VM / Subnet</summary>**
+➡️ None:
 
-<br>
-
-Inside the **Azure Portal** ➜ we'll go to our ```linux-vm``` ➜ and click on the **Networking** blade:
-
-<br>
-
-![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
-
-<br>
-
-Then inside of the Linux VM's **NSG** ➜ we'll Delete the First 2 Existent **Custom Security Rules**:
-
-<br>
-
-![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
-
-<br>
-
-We'll then **Add a New Inbound Security Rule** ➜ so that we only **Allow Inbound Traffic** from our own **IP Address**:
-
-<br>
-
-![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
-
-<br>
-
-  </details>
-
-<br>
-
-<details close> 
-  
-**<summary> ➡️ Reset the Affected User’s Password</summary>**
-
-<br>
-
-We'll go to our Virtual Machine ```linux-vm``` ➜ and click on the **Reset password** blade:
-
-<br>
-
-![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
-
-<br>
-
-Then we'll just **Reset the Password** of ```labuser``` to a Strong Password ➜ and click on 💾 **Update**
-
-<br>
-
-![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
-
-<br>
-
-  </details>
-
-<br>
-
-➡️ **Enable MFA** ➜ *We'll do this in Subsequent Labs*.
+We don't need to **Contain, Eradicate or Recover** anything ➜ because it's just an **EICAR File**.
 
 <br>
 
@@ -1184,7 +1159,7 @@ Then we'll just **Reset the Password** of ```labuser``` to a Strong Password ➜
 
 **Document Findings** & **Close out the Incident** in Microsoft Sentinel:
 
-✅ Closing out Incident as **True Positive**
+✅ Closing out Incident as **False Positive** ❌
 
 <br>
 
@@ -1194,7 +1169,9 @@ Then we'll just **Reset the Password** of ```labuser``` to a Strong Password ➜
 
 <br>
 
-We'll go back to **Microsoft Sentinel** to change the **Status** of the Incident to ☑️ **Closed**:
+We'll go back to **Microsoft Sentinel** to change the **Status** of the Incident to ☑️ **Closed**.
+
+- **Reason for Closing**: ```Benign Positive - Suspicious but expected```
 
 <br>
 
