@@ -4,17 +4,9 @@
 
 <br>
 
-<br>
-
 In this lab we're going to **Investigate & Work the Incidents** being generated within **Microsoft Sentinel**.
 
 We'll do this in accordance with the [**NIST 800-61**](https://nvlpubs.nist.gov/nistpubs/specialpublications/nist.sp.800-61r2.pdf) **Incident Management Lifecycle**.
-
-<br>
-
-<p align="center">
-<img width="750" src="https://github.com/user-attachments/assets/66745d60-fc59-406b-9955-b371304e4d98" alt="Banner"/>
-
 
 <br>
 
@@ -50,18 +42,17 @@ We won’t be using here the “absolute best way” to do **Incident Response**
 
 **4️⃣	Post-Incident Activity**
 
-<br>
-
-<h2></h2>
-
   </details>
 
-<br>
+<p align="center">
+<img width="750" src="https://github.com/user-attachments/assets/66745d60-fc59-406b-9955-b371304e4d98" alt="Banner"/>
 
 <br>
 
-<h2>📝 Incident Response Guidelines</h2>
+<br>
 
+<details close>   
+<summary> <h2>📝 Incident Response Guidelines</h2> </summary>
 <br>
 
 ### Step 1️⃣ ➜ Preparation
@@ -152,6 +143,8 @@ We'll use this simple [**Incident Response PlayBook**](https://docs.google.com/d
 - Close out the Incident in Sentinel.
 
 <br>
+
+  </details>
 
 <h2></h2>
 
