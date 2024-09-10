@@ -4,7 +4,7 @@
 
 <br>
 
-In this lab we're going to **Investigate & Work the Incidents** being generated within **Microsoft Sentinel**.
+In this lab we're going to **Investigate & Work Incidents** being generated within **Microsoft Sentinel**.
 
 We'll do this in accordance with the [**NIST 800-61**](https://nvlpubs.nist.gov/nistpubs/specialpublications/nist.sp.800-61r2.pdf) **Incident Management Lifecycle**.
 
@@ -14,7 +14,7 @@ We'll do this in accordance with the [**NIST 800-61**](https://nvlpubs.nist.gov/
   
 **<summary> 📌 Overview</summary>**
 
-We'll now start practicing **Incident Response**.
+We'll practice **Incident Response**.
 
 We can see that we have accumulated a decent number of **Incidents** over the last 24 Hours:
 
@@ -24,9 +24,9 @@ We can see that we have accumulated a decent number of **Incidents** over the la
 
 <br>
 
-So we’re going to take our time and work our way through some of these ➜ as if we’re working in a **SOC Environment**.
+So we’re going to take our time and work our way through some of these ➜ as if we’re working in a real **SOC Environment**.
 
-As previously mentioned ➜ we're going to practice the **NIST 800-61 Incident Management Lifecycle**.
+As previously mentioned ➜ we'll practice the **NIST 800-61 Incident Management Lifecycle**.
 
 💡 In reality ➜ every Organization practices **Incident Response** a little differently than one another.
 
