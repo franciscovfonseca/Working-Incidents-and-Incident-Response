@@ -108,7 +108,7 @@ We've completed this step already by:
 
 ### Step 3️⃣ ➜ Containment, Eradication & Recovery
 
-We'll use this simple [**Incident Response PlayBook**](https://docs.google.com/document/d/1EQ5MzN95POLaRIMulYg3PIH3UGHtDNcGdkFvgOXyEXQ/edit#heading=h.uyxi3urvol4g) to **Remediate the Incidents**.
+We'll use this simple [**Incident Response PlayBook**](https://docs.google.com/document/d/1Cua7Kz3Y0OZuPUS0-Q1H7jbwGbYeDq1WISIHrdRk-MY/edit#heading=h.85wjqnr3yu96) to **Remediate the Incidents**.
 
 <br>
 
