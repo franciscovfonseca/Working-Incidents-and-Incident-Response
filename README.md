@@ -20,7 +20,7 @@ We can see that we have accumulated a decent number of **Incidents** over the la
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/9c1cce53-082a-4c9e-b6d5-7da25a14a9d7)
+![azure portal](https://github.com/user-attachments/assets/375cac7f-3610-4d11-9cbd-8639ff7e54b4)
 
 <br>
 
@@ -172,7 +172,7 @@ We'll use this simple [**Incident Response PlayBook**](https://docs.google.com/d
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/9c1cce53-082a-4c9e-b6d5-7da25a14a9d7)
+![azure portal](https://github.com/user-attachments/assets/431719cf-bbda-4eca-a812-1aff0beeff76)
 
 <br>
 
@@ -210,7 +210,7 @@ We'll use this simple [**Incident Response PlayBook**](https://docs.google.com/d
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/014f7990-1462-435d-814c-b637a0cc8fe1)
+![azure portal](https://github.com/user-attachments/assets/90c4ed73-7422-4b42-81bf-ca16da3143db)
 
 <br>
 
@@ -222,7 +222,7 @@ We'll use this simple [**Incident Response PlayBook**](https://docs.google.com/d
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/85192897-8e6b-4373-9056-1119fd9bde61)
+![azure portal](https://github.com/user-attachments/assets/227d3761-f3e7-43cc-9179-fffe892bae35)
 
 <br>
 
@@ -234,7 +234,7 @@ We'll use this simple [**Incident Response PlayBook**](https://docs.google.com/d
 
 <br>
 
-**```Nothing to show here.```**
+![azure portal](https://github.com/user-attachments/assets/20a9f513-b280-460a-9794-f5ff20866cf2)
 
 <br>
 
@@ -246,11 +246,11 @@ We'll use this simple [**Incident Response PlayBook**](https://docs.google.com/d
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/f3c2a5d6-044c-469d-b70a-c066fe2a29e3)
+![azure portal](https://github.com/user-attachments/assets/a1298519-54ae-41cd-9582-a03881e9ba45)
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/f3c2a5d6-044c-469d-b70a-c066fe2a29e3)
+![azure portal](https://github.com/user-attachments/assets/0b651bae-eb40-4d42-8c78-0858d92e1f1a)
 
 <br>
 
@@ -262,11 +262,11 @@ We'll use this simple [**Incident Response PlayBook**](https://docs.google.com/d
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/80a9eedd-d292-448f-b591-33c19b0a5936)
+![azure portal](https://github.com/user-attachments/assets/9a118c0d-3101-4298-9db1-f5d3209d0be4)
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/7a073b8d-b577-43b8-885f-7cb587d152e1)
+![azure portal](https://github.com/user-attachments/assets/526d2fe2-a7bb-4ddb-bf37-5a94afc98ff6)
 
 <br>
 
@@ -282,11 +282,11 @@ The Entity is involved with other **Brute Force Attempts** during the same perio
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+![azure portal](https://github.com/user-attachments/assets/b9cca918-8351-47f4-8590-c34c686f56b1)
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+![azure portal](https://github.com/user-attachments/assets/f03743dc-f5cf-4b05-abc1-5aee5034dcc7)
 
 <br>
 
@@ -298,7 +298,7 @@ The Entity is involved with other **Brute Force Attempts** during the same perio
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+![azure portal](https://github.com/user-attachments/assets/82c05168-8085-4f3e-a5c5-f13b103e445d)
 
 <br>
 
@@ -366,7 +366,7 @@ We'll go back to **Microsoft Sentinel** to change the **Status** of the Incident
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+![azure portal](https://github.com/user-attachments/assets/15c38b88-969d-4bfc-90bc-7ecd40e39a0d)
 
 <br>
 
@@ -374,11 +374,11 @@ In the **"Comment"** section we'll paste the **Incident Notes** we took througho
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+![azure portal](https://github.com/user-attachments/assets/1c7f7a2b-f29c-4230-b460-ed38dd78b045)
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+![azure portal](https://github.com/user-attachments/assets/7921f660-46eb-40de-9e73-18bbc88b1290)
 
 <br>
 
@@ -396,7 +396,7 @@ Back in the **Azure Portal** ➜ we'll go to our ```windows-vm``` ➜ and click 
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+![azure portal](https://github.com/user-attachments/assets/ff1732dd-8164-4753-97e0-36d14b2f9304)
 
 <br>
 
@@ -404,7 +404,7 @@ Then inside of the Windows VM's **NSG** ➜ we'll Edit the existent **Inbound Se
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+![azure portal](https://github.com/user-attachments/assets/54a56406-0756-40a6-ace5-5afb907f32c1)
 
 <br>
 
@@ -412,7 +412,7 @@ We'll Edit it so that we only **Allow Inbound Traffic** from our own **IP Addres
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+![azure portal](https://github.com/user-attachments/assets/e990e8df-a8ee-4ace-853a-58d5e3016011)
 
 <br>
 
@@ -420,7 +420,7 @@ We're also going to delete the existent **RDP Rule** ➜ that **Allows anyone to
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+![azure portal](hhttps://github.com/user-attachments/assets/3e66f53c-d366-4be0-b6f1-f041832f765e)
 
 <br>
 
@@ -456,7 +456,7 @@ We're also going to delete the existent **RDP Rule** ➜ that **Allows anyone to
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/6dc6cf54-b40b-47f0-854b-8fbd32c7712b)
+![azure portal](https://github.com/user-attachments/assets/63529b63-52bc-41be-9535-e7d4c94b767f)
 
 <br>
 
@@ -487,7 +487,7 @@ We're also going to delete the existent **RDP Rule** ➜ that **Allows anyone to
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/6dc6cf54-b40b-47f0-854b-8fbd32c7712b)
+![azure portal](https://github.com/user-attachments/assets/abb13e8c-d91a-4119-a137-230a9156bfc4)
 
 <br>
 
@@ -499,7 +499,7 @@ We're also going to delete the existent **RDP Rule** ➜ that **Allows anyone to
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/780dbef7-c579-4fd1-ae9d-7006e0d2ab53)
+![azure portal](https://github.com/user-attachments/assets/088420b3-aff8-4102-940b-b8a778cb2c4d)
 
 <br>
 
@@ -523,7 +523,7 @@ We're also going to delete the existent **RDP Rule** ➜ that **Allows anyone to
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/a5cba627-578f-4911-8a6f-400a9f48ad42)
+![azure portal](https://github.com/user-attachments/assets/f87b52e8-9ca0-4f16-9af5-7c792d939c8b)
 
 <br>
 
@@ -535,7 +535,7 @@ We're also going to delete the existent **RDP Rule** ➜ that **Allows anyone to
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/7f13ccd1-e0d0-4857-90eb-c530ed56c491)
+![azure portal](https://github.com/user-attachments/assets/c71a0927-1c28-4937-befe-48cece22c2cd)
 
 <br>
 
@@ -547,7 +547,11 @@ We're also going to delete the existent **RDP Rule** ➜ that **Allows anyone to
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/4b6f5d37-159f-4bbb-9bee-5b0e973b02b0)
+![azure portal](https://github.com/user-attachments/assets/15e05e51-adc7-482c-8889-82575d5e7549)
+
+<br>
+
+![azure portal](https://github.com/user-attachments/assets/d1db1e9a-0cc3-4b9f-af8d-e20e09c20ec9)
 
 <br>
 
@@ -615,7 +619,7 @@ We'll go back to **Microsoft Sentinel** to change the **Status** of the Incident
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+![azure portal](https://github.com/user-attachments/assets/23db75e0-ab91-4bb1-b703-b98cb289026a)
 
 <br>
 
@@ -623,11 +627,11 @@ In the **"Comment"** section we'll paste the **Incident Notes** we took througho
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+![azure portal](https://github.com/user-attachments/assets/c3729286-e197-4d77-b2f2-40267ac258e0)
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+![azure portal](https://github.com/user-attachments/assets/db0c2811-76a4-4917-8820-f0a8f3bb905b)
 
 <br>
 
@@ -663,7 +667,7 @@ In the **"Comment"** section we'll paste the **Incident Notes** we took througho
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/7453979b-1468-41fe-ab5e-54b7626b59aa)
+![azure portal](https://github.com/user-attachments/assets/a5c62bca-a131-44a4-8edd-662b73da3d56)
 
 <br>
 
@@ -702,7 +706,7 @@ In the **"Comment"** section we'll paste the **Incident Notes** we took througho
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/a78aa8c6-5ab7-4229-8d69-61f8c479dc28)
+![azure portal](https://github.com/user-attachments/assets/7cee8d19-76a0-466c-ad02-73dd74e9ad39)
 
 <br>
 
@@ -714,7 +718,7 @@ In the **"Comment"** section we'll paste the **Incident Notes** we took througho
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/780dbef7-c579-4fd1-ae9d-7006e0d2ab53)
+![azure portal](hhttps://github.com/user-attachments/assets/6677e822-a9ef-4cbf-8968-35e2c2acb280)
 
 <br>
 
@@ -730,7 +734,7 @@ In the **"Comment"** section we'll paste the **Incident Notes** we took througho
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/a5cba627-578f-4911-8a6f-400a9f48ad42)
+![azure portal](https://github.com/user-attachments/assets/a895fc1b-1b43-41d3-9f59-efcd6dc3cbf7)
 
 <br>
 
@@ -742,7 +746,7 @@ In the **"Comment"** section we'll paste the **Incident Notes** we took througho
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/a5cba627-578f-4911-8a6f-400a9f48ad42)
+![azure portal](https://github.com/user-attachments/assets/e9e4d1dc-0e95-49c5-bf00-6156fb09094a)
 
 <br>
 
@@ -754,11 +758,11 @@ In the **"Comment"** section we'll paste the **Incident Notes** we took througho
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/a79b05a8-8c0a-4fec-b690-b96051203826)
+![azure portal](https://github.com/user-attachments/assets/ffc7a810-f487-4ba4-8c88-ca1201b8d6a9)
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/aeeb946b-3404-4f60-9a4d-1106374f07bc)
+![azure portal](https://github.com/user-attachments/assets/f12f40f7-798d-4e10-b585-d3e78ec3aacf)
 
 <br>
 
@@ -770,11 +774,11 @@ In the **"Comment"** section we'll paste the **Incident Notes** we took througho
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/c3cbf772-7e0b-4ad2-967e-9c2b70924f57)
+![azure portal](hhttps://github.com/user-attachments/assets/e2e42a74-3de9-43fe-a211-1830c435fa60)
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/478d9be9-7822-4b30-a9c5-cdfafcf5cb70)
+![azure portal](https://github.com/user-attachments/assets/987c05c8-215b-4966-a7f3-01cca8cc2ed3)
 
 <br>
 
@@ -790,7 +794,7 @@ Determined to be ➜ a **Legitimate Incident** ✅
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/478d9be9-7822-4b30-a9c5-cdfafcf5cb70)
+![azure portal](https://github.com/user-attachments/assets/77b140f9-02bd-4f41-b215-f529604f82c3)
 
 <br>
 
@@ -827,7 +831,7 @@ Inside the **Azure Portal** ➜ we'll go to our ```linux-vm``` ➜ and click on 
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+![azure portal](https://github.com/user-attachments/assets/cc0f5d16-c02d-4867-a60b-aacef9bc2a05)
 
 <br>
 
@@ -835,7 +839,7 @@ Then inside of the Linux VM's **NSG** ➜ we'll Delete the First 2 Existent **Cu
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+![azure portal](https://github.com/user-attachments/assets/46f75b40-3f75-4a0a-9716-38840b5226fa)
 
 <br>
 
@@ -843,7 +847,7 @@ We'll then **Add a New Inbound Security Rule** ➜ so that we only **Allow Inbou
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+![azure portal](https://github.com/user-attachments/assets/5e6cebf7-c730-4b12-85f6-849e59b4627d)
 
 <br>
 
@@ -861,7 +865,7 @@ We'll go to our Virtual Machine ```linux-vm``` ➜ and click on the **Reset pass
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+![azure portal](https://github.com/user-attachments/assets/5b1b6323-37ed-4cfa-b506-03627168b549)
 
 <br>
 
@@ -869,7 +873,7 @@ Then we'll just **Reset the Password** of ```labuser``` to a Strong Password ➜
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+![azure portal](https://github.com/user-attachments/assets/60a644f9-7610-40fe-924e-7764b2e2db6b)
 
 <br>
 
@@ -903,7 +907,7 @@ We'll go back to **Microsoft Sentinel** to change the **Status** of the Incident
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+![azure portal](https://github.com/user-attachments/assets/731a392f-d540-4853-b431-493795278a0e)
 
 <br>
 
@@ -911,11 +915,11 @@ In the **"Comment"** section we'll paste the **Incident Notes** we took:
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+![azure portal](https://github.com/user-attachments/assets/b9cd0a2a-33d5-44da-84aa-76d5d589276f)
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+![azure portal](https://github.com/user-attachments/assets/4800befa-0e58-4b74-b792-07e8731b148c)
 
 <br>
 
@@ -953,7 +957,7 @@ In the **"Comment"** section we'll paste the **Incident Notes** we took:
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/7453979b-1468-41fe-ab5e-54b7626b59aa)
+![azure portal](https://github.com/user-attachments/assets/57770c1a-e094-4aed-b44d-9a199975fe7c)
 
 <br>
 
@@ -991,7 +995,7 @@ In the **"Comment"** section we'll paste the **Incident Notes** we took:
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/a78aa8c6-5ab7-4229-8d69-61f8c479dc28)
+![azure portal](https://github.com/user-attachments/assets/b53ae208-84d6-4136-9bce-16559c380c8a)
 
 <br>
 
@@ -1003,7 +1007,7 @@ In the **"Comment"** section we'll paste the **Incident Notes** we took:
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/780dbef7-c579-4fd1-ae9d-7006e0d2ab53)
+![azure portal](https://github.com/user-attachments/assets/b37f3f5c-192b-493c-8cfa-fd5aae8e9acd)
 
 <br>
 
@@ -1015,7 +1019,7 @@ In the **"Comment"** section we'll paste the **Incident Notes** we took:
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/a5cba627-578f-4911-8a6f-400a9f48ad42)
+![azure portal](https://github.com/user-attachments/assets/e5ef444f-1be5-4538-9e0d-ec3ace4caada)
 
 <br>
 
@@ -1027,7 +1031,7 @@ In the **"Comment"** section we'll paste the **Incident Notes** we took:
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/a5cba627-578f-4911-8a6f-400a9f48ad42)
+![azure portal](https://github.com/user-attachments/assets/76799c81-96cd-4185-a54c-ccc30a390da6)
 
 <br>
 
@@ -1039,11 +1043,7 @@ In the **"Comment"** section we'll paste the **Incident Notes** we took:
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/a79b05a8-8c0a-4fec-b690-b96051203826)
-
-<br>
-
-![azure portal](https://github.com/user-attachments/assets/aeeb946b-3404-4f60-9a4d-1106374f07bc)
+![azure portal](https://github.com/user-attachments/assets/09a74895-082c-431a-ba59-06bf46750159)
 
 <br>
 
@@ -1055,11 +1055,11 @@ In the **"Comment"** section we'll paste the **Incident Notes** we took:
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/c3cbf772-7e0b-4ad2-967e-9c2b70924f57)
+![azure portal](https://github.com/user-attachments/assets/a0919c77-fd51-46a3-ae65-9ebb0bce9fd1)
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/478d9be9-7822-4b30-a9c5-cdfafcf5cb70)
+![azure portal](https://github.com/user-attachments/assets/58e75b0e-ad9c-4f5a-9937-ef686f028acb)
 
 <br>
 
@@ -1085,7 +1085,7 @@ Event
 ```
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/478d9be9-7822-4b30-a9c5-cdfafcf5cb70)
+![azure portal](https://github.com/user-attachments/assets/39df6768-6588-42f9-a0f7-653ee64f0518)
 
 <br>
 
@@ -1120,7 +1120,7 @@ SecurityAlert
 ```
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/478d9be9-7822-4b30-a9c5-cdfafcf5cb70)
+![azure portal](https://github.com/user-attachments/assets/c75c6107-3fe4-4384-95ef-02856c780b71)
 
 <br>
 
@@ -1168,7 +1168,7 @@ We'll go back to **Microsoft Sentinel** to change the **Status** of the Incident
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+![azure portal](https://github.com/user-attachments/assets/429679f0-09c8-4285-9933-7cc7bd74d250)
 
 <br>
 
@@ -1176,11 +1176,11 @@ In the **"Comment"** section we'll paste the **Incident Notes** we took:
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+![azure portal](https://github.com/user-attachments/assets/5c0b7b10-8f53-4408-99da-51b803d12349)
 
 <br>
 
-![azure portal](https://github.com/user-attachments/assets/e3e70d17-02be-40d5-9832-6c8dc61f05ff)
+![azure portal](https://github.com/user-attachments/assets/eca7c3c8-adc4-4489-9cb9-d7b89661b412)
 
 <br>
 
